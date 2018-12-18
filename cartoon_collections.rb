@@ -5,6 +5,13 @@ def roll_call_dwarves(names)
     puts names
     
   end
+  def print_half(name)
+    new_name =[]
+    name.each_with_index do |name..10|
+      new_name << name
+      
+      #%
+
   
 end
 
@@ -53,7 +60,7 @@ puts long_planteer_calls(short_words)
 
 
 def find_the_cheese(str)
-  snacks = ["cheddar", "gouda", "camembert"]
+  snacks = ["cheddar", "gouda", "camembert" "mozerella"]
   result = ""
   
   cheese_types.include? (snacks)
@@ -65,4 +72,16 @@ def find_the_cheese(str)
 end
 
 puts find_the_cheese(snacks)
+
+def words_with_b(words)
+  
+  result =[]
+  
+  words.each_with_char do |word|
+    char = word[0]== "b"
+    if char == "b"
+      result << word
+    end
+end
+  
 
